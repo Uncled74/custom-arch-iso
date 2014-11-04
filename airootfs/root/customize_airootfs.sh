@@ -24,6 +24,7 @@ systemctl set-default multi-user.target
 
 systemctl disable dhcpcd.service
 systemctl enable slim
+systemctl start slim
 systemctl enable NetworkManager.service
 
 echo setxkbmap -layout ch >> /home/simu/.xinitrc
