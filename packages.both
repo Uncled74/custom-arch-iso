@@ -62,14 +62,13 @@ zsh
 
 base-devel
 bash-completion
-bluez
-bluez-utils
 firefox
 git
 networkmanager
 network-manager-applet
 slim
 ttf-dejavu
+unzip
 wpa_supplicant
 xfce4
 xorg-drivers
@@ -77,4 +76,10 @@ xorg-server
 xorg-xinit
 xorg-twm
 xterm
+
+cmake
+glu
+sdl
+qt4
+qwt
 yajl
