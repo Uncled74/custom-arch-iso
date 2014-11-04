@@ -21,3 +21,7 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
+
+systemctl disable dhcpcd.service
+systemctl enable slim
+systemctl enable NetworkManager.service
