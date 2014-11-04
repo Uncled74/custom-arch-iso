@@ -31,3 +31,5 @@ echo setxkbmap -layout ch >> /home/simu/.xinitrc
 echo exec startxfce4 >> /home/simu/.xinitrc
 
 rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+
+echo "[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx" >> /home/simu/.bash_profile
