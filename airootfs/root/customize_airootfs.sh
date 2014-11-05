@@ -11,7 +11,7 @@ usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh simu
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh student
 
 chmod 750 /etc/sudoers.d
 chmod 440 /etc/sudoers.d/g_wheel
@@ -25,10 +25,10 @@ systemctl set-default multi-user.target
 systemctl disable dhcpcd.service
 systemctl enable NetworkManager.service
 
-echo setxkbmap -layout ch >> /home/simu/.xinitrc
-echo exec startxfce4 >> /home/simu/.xinitrc
+echo setxkbmap -layout ch >> /home/student/.xinitrc
+echo exec startxfce4 >> /home/student/.xinitrc
 
 # rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
-sed -i "s/root/simu/g" /etc/systemd/system/getty@tty1.service.d/autologin.conf
+sed -i "s/root/student/g" /etc/systemd/system/getty@tty1.service.d/autologin.conf
 
 echo startx >> /etc/profile
