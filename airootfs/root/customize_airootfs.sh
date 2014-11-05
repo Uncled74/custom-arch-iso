@@ -28,6 +28,7 @@ systemctl enable NetworkManager.service
 echo setxkbmap -layout ch >> /home/simu/.xinitrc
 echo exec startxfce4 >> /home/simu/.xinitrc
 
-rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+# rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+sed -i "s/root/simu/g" /etc/systemd/system/getty@tty1.service.d/autologin.conf
 
 echo startx >> /etc/profile
