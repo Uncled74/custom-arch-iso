@@ -11,7 +11,7 @@ usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh simu
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/bash simu
 
 chmod 750 /etc/sudoers.d
 chmod 440 /etc/sudoers.d/g_wheel
@@ -23,8 +23,6 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 
 systemctl disable dhcpcd.service
-systemctl enable slim
-systemctl start slim
 systemctl enable NetworkManager.service
 
 echo setxkbmap -layout ch >> /home/simu/.xinitrc
