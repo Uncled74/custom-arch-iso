@@ -24,6 +24,7 @@ systemctl set-default multi-user.target
 
 systemctl disable dhcpcd.service
 systemctl enable NetworkManager.service
+systemctl enable bluetooth.service
 
 echo setxkbmap -layout ch >> /home/student/.xinitrc
 echo exec startxfce4 >> /home/student/.xinitrc
