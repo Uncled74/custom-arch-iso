@@ -63,6 +63,8 @@ zsh
 base-devel
 bash
 bash-completion
+bluez
+bluez-utils
 firefox
 git
 networkmanager
