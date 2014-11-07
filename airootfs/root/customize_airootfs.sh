@@ -32,3 +32,5 @@ echo exec startxfce4 >> /home/student/.xinitrc
 sed -i "s/root/student/g" /etc/systemd/system/getty@tty1.service.d/autologin.conf
 
 echo startx >> /etc/profile
+
+pacman -Syy
