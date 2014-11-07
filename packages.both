@@ -85,7 +85,10 @@ cmake
 dashel
 enki-git
 glu
+gtk-engine-murrine
 sdl
 qt4
 qwt
+xfce-theme-greybird
+xfce4-whiskermenu-plugin
 yajl
