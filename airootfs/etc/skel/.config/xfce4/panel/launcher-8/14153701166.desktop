@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Aseba Playground
+GenericName=Aseba robot simulator for solo play
+Exec=asebaplayground
+TryExec=asebaplayground
+Categories=Education;Science;Aseba
+Icon=asebaplayground
+X-XFCE-Source=file:///usr/share/applications/asebaplayground.desktop

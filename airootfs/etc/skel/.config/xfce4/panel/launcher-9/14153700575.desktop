@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Aseba Studio
+GenericName=Integrated Development Environment
+Exec=asebastudio
+TryExec=asebastudio
+Categories=Education;Science
+Icon=asebastudio
+X-XFCE-Source=file:///usr/share/applications/asebastudio.desktop
